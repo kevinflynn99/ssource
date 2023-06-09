@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+--main-color: #000000;
+--black-color: #000000;
+--border: 0.1rem solid rgba(136, 136, 136, 0.4);
+}
+
+
+
+
+* {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: 0.2s ease;
+}
+
+/*! base html codes */ 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--black-color)
+}
+
+body{
+    background-color: var(--main-color);
+
+}
+
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color:#5c5c5c;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.4;
+
+}
+
+
+.heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span {
+    text-transform: uppercase;
+
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color: #5c5c5c;
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+
+/*! header start */
+
+.header .logo img{ 
+    height: 10rem;
+
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent
+   
+}
+
+
+
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+/*! header end */
+/*! AnaSayfa start */
+.AnaSayfa {
+    min-height: 100vh;
+    background: url(../images/restaurant-5.jpg )
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.AnaSayfa .content{
+    max-width: 60rem;
+}
+
+.AnaSayfa .content h3{
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+
+}
+.AnaSayfa .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(255, 255, 255);
+}
+
+/*! AnaSayfa end */
+
+/*! Menü start */
+.Menü .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Menü .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.Menü .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Menü .box-container .box .menü-kategori {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.Menü .box-container .box h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.Menü .box-container .box .fiyat {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+
+/*! Menü end */
+
+/*! Hakkımızda start */
+
+.Hakkımızda .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.Hakkımızda .row .image{
+    flex: 1 1 45rem;
+
+}
+
+.Hakkımızda .row .img{
+    width: 100%;
+ 
+    
+}
+
+.Hakkımızda .row .content{
+    flex: 1 1 45rem;
+
+}
+
+.Hakkımızda .row .content h3{
+    font-size: 4rem;
+    color: #ffffff;
+
+}
+.Hakkımızda .row .content p{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/*! Hakkımızda end */
+
+/*! Yorumlar start */
+.Yorumlar .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Yorumlar .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: white;
+    border-radius: 3rem;
+
+}
+
+.Yorumlar .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 2rem 0;
+
+}
+
+.Yorumlar .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*! Yorumlar end */
+
+/*! İletişim start */
+.İletişim .row {
+    display: flex;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.İletişim .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+   
+} 
+
+.İletişim .row form {
+   flex: 1 1 45rem;
+   padding: 5rem 2rem;
+   text-align: center;
+   
+} 
+
+.İletişim .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #000000;
+}
+
+.İletişim .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border)
+}
+
+.İletişim .row form .inputBox i{
+    color: #030303;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.İletişim .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background-color: none;
+}
+
+/*! İletişim end */
+
+/*! footer start */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input {
+    width: 30rem;
+}
+
+.footer .search .btn {
+    background-color: #5c5c5c;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+
+.footer .share{
+    padding: 2rem 0;
+}
+
+.footer .share a {
+    padding: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: white;
+    font-size: 2rem;
+    margin: 0.3rem;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: var(--black-color);
+}
+
+.footer .links a {
+    background-color: #fff;
+    padding: 0.7rem 2rem;
+    color: #000000;
+    font-size: 2rem;
+
+}
+
+.footer .links a:hover {
+    background-color: #5c5c5c;
+    opacity: 0.7;
+    
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+
+
+/*! footer end */
